@@ -1,16 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon FNF Privé</title>
     <style>
-        body, html {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
             width: 100%;
             height: 100%;
             background-color: #000;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         iframe {
             width: 100%;
@@ -20,6 +28,10 @@
     </style>
 </head>
 <body>
-    <iframe src="https://html-classic.itch.zone/html/3030364/index.html" allow="autoplay; keyboard"></iframe>
+    <iframe 
+        src="https://fnf.kbhgames.com/" 
+        allow="autoplay; keyboard; gamepad" 
+        sandbox="allow-scripts allow-same-origin allow-forms">
+    </iframe>
 </body>
 </html>
